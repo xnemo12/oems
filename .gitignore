@@ -1,0 +1,17 @@
+.idea
+.DS_Store
+.vscode
+.venv
+.env
+.envrc
+.coverage
+*.pyc
+data
+files
+files/uploads
+static
+media
+config/settings_dev.py
+config/settings_prod.py
+pytest.ini
+db.sqlite3
