@@ -2,13 +2,14 @@ from django.db import models
 from core.models import BaseModel
 
 
-class Organization(BaseModel):
+class Admission(BaseModel):
     pass
 
 
-class Department(BaseModel):
+class Device(BaseModel):
     pass
 
 
-class Employee(BaseModel):
+class Attendance(BaseModel):
     pass
+

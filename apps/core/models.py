@@ -13,3 +13,15 @@ class BaseModel(models.Model):
     class Meta:
         abstract = True
         ordering = ('id',)
+
+
+class Country(BaseModel):
+    pass
+
+
+class Region(BaseModel):
+    pass
+
+
+class District(BaseModel):
+    pass
