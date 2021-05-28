@@ -16,12 +16,15 @@ class BaseModel(models.Model):
 
 
 class Country(BaseModel):
-    pass
+    name = models.CharField(_('Country name'), max_length=255)
+    code = models.CharField(_('Country code'), max_length=3)
 
 
 class Region(BaseModel):
-    pass
+    name = models.CharField(_('Region name'), max_length=255)
+    country = models.ForeignKey('Country', SET_NULL, null=True, blank=True, related_name='regions')
 
 
 class District(BaseModel):
-    pass
+    name = models.CharField(_('District name'), max_length=255)
+    country = models.ForeignKey('Region', SET_NULL, null=True, blank=True, related_name='districts')
